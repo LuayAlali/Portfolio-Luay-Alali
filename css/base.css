@@ -3,6 +3,32 @@
 
 /*base Styles*/
 
+/* logo */
 #logo{
 	font-size: 22px;
 }
+
+/* Colors */
+
+/* Background  */
+
+
+
+.jumbotron{
+	background-color: #a05ea1;
+	
+	color:black;
+}
+
+/* fonts */
+*{
+	font-family: 'Oswald', sans-serif;
+}
+
+.nav-link{
+	font-weight: 200;
+}
+.navbar-dark .navbar-toggler{
+	outline: none;
+   }
+   
