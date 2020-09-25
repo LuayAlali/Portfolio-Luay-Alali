@@ -2,7 +2,9 @@
 /* CSS Document */
 
 /*base Styles*/
-
+*{
+	box-sizing: border-box;
+}
 /* logo */
 #logo{
 	font-size: 22px;
@@ -12,10 +14,12 @@
 
 /* Background  */
 
-
+body{
+	background-color: rgba(160,94,161,.1);
+}
 
 .jumbotron{
-	background-color: #a05ea1;
+	background-color: rgba(160,94,161,1);
 	
 	color:black;
 }
@@ -32,3 +36,62 @@
 	outline: none;
    }
    
+a:hover{
+text-decoration: none;
+}
+
+   /* images */
+
+   .luay{
+  	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin:auto;
+	
+	
+
+   }
+.luay-image{
+	position: relative;
+	padding-right: 50px;
+}
+.luay-image:after{
+	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	background-color: rgba(160,94,161,.3);
+  	top: 0;
+  	left: 0;
+  	display: block;
+  	content: "";
+}
+   /* header layout */
+
+
+   .header{
+	   display: grid;
+	   grid-template-columns: 1fr 1fr;
+   }
+   .header-text{
+	padding-left: 50px;
+}
+
+/* main container */
+
+
+
+
+
+   @media(max-width:500px){
+.luay{
+		display: none;
+		
+	}
+	.header{
+		display: block;
+	}
+	.header-text{
+		padding-left: 0px;
+	}
+	
+}
