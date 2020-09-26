@@ -5,6 +5,8 @@
 *{
 	box-sizing: border-box;
 }
+/* header */
+
 /* logo */
 #logo{
 	font-size: 22px;
@@ -23,6 +25,7 @@ body{
 	
 	color:black;
 }
+
 
 /* fonts */
 *{
@@ -77,7 +80,9 @@ text-decoration: none;
 }
 
 /* main container */
-
+.hidden{
+	display: none;
+}
 
 
 
