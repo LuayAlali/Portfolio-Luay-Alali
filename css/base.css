@@ -6,10 +6,16 @@
 	box-sizing: border-box;
 }
 /* header */
+.header{
+	font-weight: 200;
+	color:rgba(0, 0, 0, 0.7);
+}
+
 
 /* logo */
 #logo{
 	font-size: 22px;
+	color:rgba(0, 0, 0, 0.7);
 }
 
 /* Colors */
@@ -21,9 +27,13 @@ body{
 }
 
 .jumbotron{
-	background-color: rgba(160,94,161,1);
+	/* background-color: rgba(160,94,161,1); */
+	background: linear-gradient(90deg, #A05EA1,#B595B5);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color:white;
+
 	
-	color:black;
 }
 
 
@@ -34,11 +44,23 @@ body{
 
 .nav-link{
 	font-weight: 200;
+	padding: 0;
 }
-.navbar-dark .navbar-toggler{
+.navbar{
+	background: linear-gradient(90deg, #161319,#312936);
+}
+.navbar .navbar-toggler{
 	outline: none;
    }
-   
+   #navbarDropdownMenuLink {
+    padding: .5rem;
+	color: rgba(255,255,255,.5);
+	font-weight: 200;
+	transition: ease-in color;
+}
+#navbarDropdownMenuLink:hover{
+	color:white;
+}
 a:hover{
 text-decoration: none;
 }
@@ -58,7 +80,7 @@ text-decoration: none;
 	position: relative;
 	padding-right: 50px;
 }
-.luay-image:after{
+/* .luay-image:after{
 	position: absolute;
   	height: 100%;
   	width: 100%;
@@ -67,17 +89,10 @@ text-decoration: none;
   	left: 0;
   	display: block;
   	content: "";
-}
+} */
    /* header layout */
 
 
-   .header{
-	   display: grid;
-	   grid-template-columns: 1fr 1fr;
-   }
-   .header-text{
-	padding-left: 50px;
-}
 
 /* main container */
 .hidden{
