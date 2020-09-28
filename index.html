@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Black+Ops+One&family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
 <title>Luay Alali</title>
 </head>
@@ -12,7 +13,7 @@
 <body>
 
 <!--		Navigation Bar-->
-<nav class="navbar navbar-expand-lg navbar-dark  sticky-top">
+<nav class="navbar navbar-expand-md navbar-dark  sticky-top">
   <a class="navbar-brand" href="#">Luay Alali</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -46,12 +47,13 @@
 
 
 <!--		Jumbotron-->
-  <div class="jumbotron jumbotron-fluid clearfix header" >
-    <div class="container">
-      <div class="text-left">
+  <div class="jumbotron jumbotron-fluid clearfix jumbo-container" >
+    <div class="container jumbo-header">
+      <div>
       <h1 class="header">Web Developer</h1>
-      <h2 class="lead" id="logo">Learn.Create.Repeat.</h2>
-      
+      <h2 id="logo">Learn.Create.Repeat.</h2>
+      <h1 class="always">ALWAYS CREATE</h1>
+      <div class="icons">
       <a href="mailto:luayalali@gmail.com" target="_
       blank"><img src="gmail.svg" alt="email"></a>
       <a href="https://www.linkedin.com/in/luay-alali-9286551a2/" target="_blank"><img src="linkedin.svg" alt="linkedin"> </a>
@@ -59,24 +61,48 @@
       _blank"><img src="github.svg" alt="Github" ></a>
     </div>
     </div>
-    <!-- <div class="luay-image">
+    </div>
+    <div class="luay-image">
     <img src="IMG_20200823_211719-min.jpg" class=" mx-auto d-s-none d-m-block luay float-right" alt="Profile picture">
-  </div> -->
+  </div>
 </div>
 
-<div class="container-fluid">
+<div class="container">
 <h1 class="text-muted text-left">&lt;projects&gt;</h1>
 <br>
 <br><br><br>  <br>
-<h1 class="text-muted text-left ml-4">&lt;mini-projects&gt;</h1>
-  <h1 class="text-muted text-left ml-4">&lt;/mini-projects&gt;</h1>
-  <h1 class="text-muted text-left ml-4">&lt;frontend&gt;</h1>
+<div class="front-end">
+  <h1 class="text-muted text-left">&lt;frontend&gt;</h1>
+  <br><br>
+  <div class="clearfix mobile-view">
+    <div class="card" >
+      <img class="card-img-top bg-light project-image"  src="images/card-images/notitia-01.svg" alt="Card image cap">
+      <div class="card-body">
+        <span class="card-title-1">Vanilla Javascript</span> <span class="card-title-2">CSS</span>
+        <p class="card-text mt-2">notitia is an analytics dashboard that can be used with an API to showcase data from multiple social media sites. I created this dashboard primarily using CSS grid and Vanilla Javascript. I linked a Chart.js bundle for the charts along with some CSS toggle switch file for all the switches. Together this gives you plenty of room to customize the charts to any specification.</p>
+        <a href="#" class="btn btn-secondary">Github</a>
+        <a href="#" class="btn btn-secondary">Live</a>
+      </div>
+    </div>
+    <div class="clearfix mobile-view mt-4">
+      <div class="card" >
+        <img class="card-img-top bg-light project-image"  src="images/card-images/notitia-employeeDirec.svg" alt="Card image cap">
+        <div class="card-body">
+          <span class="card-title-1">Vanilla Javascript</span> <span class="card-title-2">CSS</span>
+          <p class="card-text mt-2">notitia is an analytics dashboard that can be used with an API to showcase data from multiple social media sites. I created this dashboard primarily using CSS grid and Vanilla Javascript. I linked a Chart.js bundle for the charts along with some CSS toggle switch file for all the switches. Together this gives you plenty of room to customize the charts to any specification.</p>
+          <a href="#" class="btn btn-secondary">Github</a>
+          <a href="#" class="btn btn-secondary">Live</a>
+        </div>
+      </div>
+
+</div>
+</div>
   <h1 class="text-muted text-left ml-4">&lt;react&gt;</h1>
   <h1 class="text-muted text-left ml-4">&lt;/react&gt;</h1>
   <h1 class="text-muted text-left ml-4">&lt;/frontend&gt;</h1>
   <h1 class="text-muted text-left ">&lt;/projects&gt;</h1>
 </div>
-
+</div>
 <!-- About  -->
 <div class="container-fluid" id="about">
 <h1 class="text-muted ml-3">&lt;about&gt;</h1>
@@ -95,6 +121,7 @@ And yes I have a knack of finding solutions to oblique matters at hand. However 
 </div>
   
 
+<div class="container-fluid">
 
 
 	<!-- <div class="container-fluid main-c">
