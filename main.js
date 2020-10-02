@@ -16,3 +16,7 @@ $('.nav-link').on('click',function() {
   $('.container-fluid').on('click',function() {
     $('.navbar-collapse').collapse('hide');
   });
+
+  $('.bottom-navbar').on('click',function() {
+    $('.navbar-collapse').collapse('hide');
+  });
