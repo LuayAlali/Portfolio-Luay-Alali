@@ -130,7 +130,9 @@ text-decoration: none;
 	line-height: 1.5;
 	font-family: 'Roboto Slab', serif;
 }
-
+.project-image{
+	max-height: 360px;
+}
 /* bottom nav */
 .bottom-navbar{
 	display: flex;
@@ -168,8 +170,10 @@ text-decoration: none;
 	.main-container{
 		margin-bottom: 40px;
 	}
-	
-	
+	 .card{
+		margin-top: 25px;
+	}
+	 
 }
 
 @media(max-width:767px){
