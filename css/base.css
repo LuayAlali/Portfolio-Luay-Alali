@@ -6,16 +6,27 @@
 	box-sizing: border-box;
 }
 /* header */
+.jumbo-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+.jumbo-header{
+align-self: center;
+}
 .header{
 	font-weight: 200;
 	color:rgba(0, 0, 0, 0.7);
+	display: none;
 }
 
 
 /* logo */
 #logo{
-	font-size: 22px;
+	font-size: 50px;
 	color:rgba(0, 0, 0, 0.7);
+	font-weight: 300;
 }
 
 /* Colors */
@@ -28,7 +39,7 @@ body{
 
 .jumbotron{
 	/* background-color: rgba(160,94,161,1); */
-	background: linear-gradient(90deg, #A05EA1,#B595B5);
+	background: linear-gradient(-90deg, #A05EA1,#B595B5);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	color:white;
@@ -47,7 +58,7 @@ body{
 	padding: 0;
 }
 .navbar{
-	background: linear-gradient(90deg, #161319,#312936);
+	background: linear-gradient(-90deg, #161319,#312936);
 }
 .navbar .navbar-toggler{
 	outline: none;
@@ -100,18 +111,84 @@ text-decoration: none;
 }
 
 
+/* cards */
+.card-title-1{
+	background: #f3bd0c;
+	color:black;
+	font-weight: 500;
+	padding:5px;
+	border-radius: 5px;;
+}
+.card-title-2{
+	background: red;
+	color:white;
+	font-weight: 500;
+	padding:5px;
+	border-radius: 5px;;
+}
+.card-text{
+	line-height: 1.5;
+	font-family: 'Roboto Slab', serif;
+}
 
-
+/* bottom nav */
+.bottom-navbar{
+	display: flex;
+	justify-content: space-around;
+    padding: 5px
+}
+.bottom-navbar img{
+	width: 35px;
+}
    @media(max-width:500px){
 .luay{
 		display: none;
 		
 	}
 	.header{
-		display: block;
+		display: NONE;
+		
 	}
 	.header-text{
 		padding-left: 0px;
+		
+	}
+	#logo{
+		display: none;
+	}
+	.always{
+		font-size: 80px;
+		font-family: 'Anton', sans-serif;
+
+
+	}
+	.icons{
+		display:none;
+	}
+	.main-container{
+		margin-bottom: 40px;
 	}
 	
+	
+}
+
+@media(max-width:767px){
+	#navbarDropdownMenuLink{
+		padding:0;
+	}
+.main-container{
+	margin-bottom: 40px;
+}
+} 
+@media(min-width: 500px){
+	.bottom-navbar{
+		display: none;
+	}
+}
+
+@media(min-width: 767px){
+.main-container{
+	margin-bottom: auto;
+}
+
 }
