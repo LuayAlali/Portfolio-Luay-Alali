@@ -70,15 +70,15 @@
 <div class="container-fluid main-container">
 
 <h1 class="text-muted text-left">&lt;projects&gt;</h1>
-<br>
-<br><br><br>  <br>
 
-  <h3 class="text-muted text-left">&lt;frontend&gt;</h3>
-  <br><br>
+
+
+  
+  <!-- <br><br> -->
  
-    <div class="projects ">
+    <div class="projects mobile">
        <!-- project 1 -->
-    <div class="card ">
+    <div class="card one">
       <div class="card-header bg-secondary">
         <ul class="nav nav-pills card-header-pills ">
           <li class="nav-item ">
@@ -90,7 +90,32 @@
         
         </ul>
       </div>
-      <img class="card-img-top bg-light project-image"  src="images/card-images/notitia-cms.svg" alt="Card image cap">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/card-images/notitia-cms.svg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only color-primary">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon " aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
       <div class="card-body mt-2">
         <span class="card-title-1 ">Vanilla Javascript</span> <span class="card-title-2">CSS</span> <span class="bg-dark p-1 rounded text-white">Bootstrap</span>
         <p class="card-text mt-3">notitia is an analytics dashboard that can be used with an API to showcase data from multiple social media sites. I created this dashboard primarily using CSS grid and Vanilla Javascript. I linked a Chart.js bundle for the charts along with some CSS toggle switch file for all the switches. Together this gives you plenty of room to customize the charts to any specification.</p>
@@ -98,7 +123,7 @@
       </div>
     </div>
       <!-- project 2 -->
-    <div class="card  " >
+    <div class="card  two" >
       <div class="card-header bg-secondary">
         <ul class="nav nav-pills card-header-pills ">
           <li class="nav-item ">
@@ -120,7 +145,7 @@
     
  
   <!-- Project 3 -->
-      <div class="card " >
+      <div class="card three" >
         <div class="card-header bg-secondary">
           <ul class="nav nav-pills card-header-pills ">
             <li class="nav-item ">
@@ -142,7 +167,7 @@
 
 <!-- Project 4 -->
 
-<div class="card " >
+<div class="card four" >
   <div class="card-header bg-secondary">
     <ul class="nav nav-pills card-header-pills ">
       <li class="nav-item ">
@@ -164,7 +189,7 @@
 
 
   <!-- Project 5 -->
-  <div class="card " >
+  <div class="card five" >
     <div class="card-header bg-secondary">
       <ul class="nav nav-pills card-header-pills ">
         <li class="nav-item ">
@@ -186,7 +211,7 @@
 
 <!-- Project 6 -->
 
-<div class="card " >
+<div class="card six" >
   <div class="card-header bg-secondary">
     <ul class="nav nav-pills card-header-pills ">
       <li class="nav-item ">
@@ -206,30 +231,25 @@
   </div>
 </div>
 
-  
-  <!-- <h4 class="text-muted text-left ml-4 mt-4 ">&lt;small&gt;</h4>
-  <h4 class="text-muted text-left ml-4">&lt;/small&gt;</h4>
-  <h3 class="text-muted text-left ml-4">&lt;/frontend&gt;</h3>
-  <h1 class="text-muted text-left ">&lt;/projects&gt;</h1> -->
 
 
+</div>
+<h1 class="text-muted text-right clearfix project-head-bottom">&lt;/projects&gt;</h1>
 <!-- About  -->
-<div class="container-fluid " id="about">
-<h1 class="text-muted ml-3">&lt;about&gt;</h1>
-<br>
+<div class="container-fluid about" id="about">
+  <h4 class="text-muted text-left about-header">&lt;about&gt;</h4>
+
 <p> I was thinking of ways to let you the reader know more about me, in a matter that is relevant.
 How I moved to Canada in 2001  as a refugee and how to portray the impact it had on me, my work ethic and how it molded my personality. My experience as an entrepreneur, and my experience working in a team and achievements in said fields. Yes I have been a working professional for the past 10 years. I worked full-time whilst in school. 
 And yes I have a knack of finding solutions to oblique matters at hand. However nothing sums up who I am and my values better than this quote:
 </p>
-<p>
-<img src="michaelwaynequote.jpg" alt="quote" class=" img-fluid mx-auto">
-</p>
-
-
-
-<h1 class="text-muted float-right ">&lt;/about&gt;</h1>
+<div class="michael">
+  <img src="michaelwaynequote.jpg" alt="quote" class=" img-fluid mx-auto">
 </div>
+
+<h4 class="text-muted text-left ml-4 about-footer">&lt;/about&gt;</h4>
 </div>
+
 
 </div>
 

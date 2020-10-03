@@ -1,15 +1,46 @@
 @media(min-width: 769px){
 
-    .projects{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-gap: 2%;
+    .mobile{
+       display: none;
     }
 }
 
 @media(min-width: 1024px){
+  
     .projects{
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  
     }
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2% .5fr .5fr 2%;
+    margin-top: 50px;
+    grid-gap: 5%;
+    margin-bottom: 30px;
+    grid-template-areas: 
+    
+    "about-header .."
+    "about-text .."
+    "about-text image"
+    ".. about-footer"
+}
+.michael{
+    grid-area: image;
+}
+.about p{
+    grid-area: about-text;
+}
+.about-header{
+    grid-area: about-header;
+  
+}
+.about-footer{
+    grid-area: about-footer;
+    justify-self: end;
+}
 }
