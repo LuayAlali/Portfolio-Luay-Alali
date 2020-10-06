@@ -8,48 +8,9 @@
 .tablet{
     margin-left: 5%;
     margin-right: 5%;
-}
-.tabc-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "white desc ."
-    "white  not-accord .";
-    grid-gap: 5%;
-}
-.card{
-    border: none;
+   
 }
 
-.white{
-    background: rgba(20, 20, 20, 1);
-  grid-area: white;
-  position: relative;
-  border-radius: 5px;
-height: 250px;
-  max-width: 400px;
- width: 300px;
-
-}
- 
-.carousel-item{
-    opacity: .6;
-
-}
-
-    .not-img{
-        opacity: .4;
-        grid-area: not-img;
-    }
-
-
-    .not-text{
-        grid-area: desc;
-        align-self: center;
-    }
-    .not-accord{
-        grid-area: not-accord;
-    }
 }
 
 @media(min-width: 1024px){
