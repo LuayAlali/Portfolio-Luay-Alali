@@ -11,13 +11,37 @@
    
 }
 
+.project-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-gap: 2%;
+    grid-template-areas:  
+    "image-1 text-1 "
+    "image-1 links-1 "
+    "image-1 extext-1 "
+    ;
+}
+.project-1-text{
+    grid-area: text-1;
+}
+.img-1{
+    grid-area: image-1;
+    border:solid 1px #1ecbe1;
+    opacity: .7;
+    border-radius: 3px;
+    background: white;
+}
+.web-links-1{
+    grid-area: links-1;
+}
+.project-1-exText{
+    grid-area: exttext-1;
+}
 }
 
 @media(min-width: 1024px){
   
-    .projects{
-display: none;
-    }
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
