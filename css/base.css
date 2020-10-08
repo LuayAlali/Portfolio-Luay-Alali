@@ -6,8 +6,17 @@
 	box-sizing: border-box;
 }
 
-/* header */
-
+/* scrollbars */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.project-1::-webkit-scrollbar {
+	display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .project-1 {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+  }
 
 
 
@@ -27,13 +36,14 @@ body{
 	/* background-image: url("../images/221884-P15UPK-352.JPG"); */
 	background-size: cover;
 	background-attachment: fixed;
-	
+	max-width: 1600px;
+	margin:auto;
 }
 
 .jumbotron{
 	/* background-color: rgba(160,94,161,1); */
 	/* background: linear-gradient(-90deg, #A05EA1,#B595B5); */
-	background-image: url(../images/card-images/white.jpg);
+	background-image: url(../images/white-min.jpg);
 	background-repeat: no-repeat;
 	height: 100vh;
 	background-size: 100% 100%;
@@ -90,17 +100,17 @@ text-decoration: none;
 	margin-top: 60px;
 	font-family: 'Alef', sans-serif;
 	font-size: 1.7rem;
-	border: none;
-	transition: color ease-in-out .2s;
-	transition: background-color ease-in-out .2s;
-	transition: border ease-in-out .2s;
+	border: 1px solid #1ecbe1;
+	
+	transition: background-color  ease-in-out .2s, color ease-in-out .4s ;
+
 	outline: none;
 	color: white;
 }
 .project-btn:hover{
 	color: #1ecbe1;
 	background-color: white;
-	border: 1px solid #1ecbe1;
+	
 }
 
 .project-btn:focus{
@@ -130,6 +140,10 @@ background-color:  #1ecbe1;
 }
 .readMore{
 	color: black;
+	transition: color ease-in-out .2s;
+}
+.readMore:hover{
+	color:#1ecbe1;
 }
 
 /* main container */
