@@ -1,15 +1,37 @@
-@media(min-width: 769px){
-
-    .mobile{
-       display: none;
-    }
-
-    /* card layout */
-.tablet{
-    margin-left: 5%;
-    margin-right: 5%;
+.main-container{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+    "projects"
+    "about";
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.projects{
+    grid-area: projects;
+    display: grid;
+   text-align: left;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(5, 1.2fr);
+  
    
 }
+.about{
+    grid-area: about;
+    margin-top: 6rem;
+}
+@media(min-width: 769px){
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 380px);
+    grid-gap:1%;
+}
+  
+
+    /* card layout */
+
 
 .project-1{
     display: grid;
@@ -22,43 +44,59 @@
     "image-1 extext-1 "
     ;
     overflow-y: scroll;
+    border: 2px solid gold;
+    padding: 56px;
+    border-radius: 5px;
+   
+    box-shadow: 5px 5px lightgrey;
+    
 }
 .project-1-text{
     grid-area: text-1;
+    
+    
 }
 .img-1{
     grid-area: image-1;
-    border:solid 1px #1ecbe1;
-    opacity: .7;
+    
+  border: 1px solid lightgrey;
     border-radius: 3px;
     background: white;
 }
 .web-links-1{
     grid-area: links-1;
+    
 }
 .project-1-exText{
     grid-area: exttext-1;
+    
 }
 
 /* project-2 */
 .project-2{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-rows: 1fr .5fr 7fr;
     grid-gap: 2%;
     grid-template-areas: 
         "image-2 text-2"
         "image-2 links-2"
         "image-2 extext-2";
+        border: 2px solid gold;
+        padding: 56px;
+        border-radius: 5px;
+        box-shadow: 5px 5px lightgrey;
+        
 }
 .project-2-text{
     grid-area: text-2;
 }
 .img-2{
     grid-area: image-2;
-    border:solid 1px #1ecbe1;
-    opacity: .7;
+
+    border: 1px solid lightgrey;
     border-radius: 3px;
+    
     background: white;
 }
 .web-links-2{
@@ -77,16 +115,20 @@
         "image-3 text-3"
         "image-3 links-3"
         "image-3 extext-3";
+        border: 2px solid gold;
+        padding: 56px;
+        border-radius: 5px;
+       
+        box-shadow: 5px 5px lightgrey;
 }
 .project-3-text{
     grid-area: text-3;
 }
 .img-3{
     grid-area: image-3;
-    border:solid 1px #1ecbe1;
-    opacity: .7;
     border-radius: 3px;
     background: white;
+    border: 1px solid lightgrey;
 }
 .web-links-3{
     grid-area: links-3;
@@ -99,20 +141,26 @@
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr 3fr;
-    grid-gap: 2%;
+    grid-gap: 5%;
     grid-template-areas: 
         "image-4 text-4"
         "image-4 links-4"
         "image-4 extext-4";
+        border: 2px solid gold;
+    padding: 56px;
+    border-radius: 5px;
+   
+    box-shadow: 5px 5px lightgrey;
 }
 .project-4-text{
     grid-area: text-4;
+    
 }
 .img-4{
     grid-area: image-4;
-    border:solid 1px #1ecbe1;
-    opacity: .7;
-    border-radius: 3px;
+    border: 1px solid lightgrey;
+   height:240px;
+   
     background: white;
 }
 .web-links-4{
@@ -132,14 +180,20 @@
         "image-5 text-5"
         "image-5 links-5"
         "image-5 extext-5";
+        border: 2px solid gold;
+        padding: 56px;
+        border-radius: 5px;
+       
+        box-shadow: 5px 5px lightgrey;
 }
 .project-5-text{
     grid-area: text-5;
 }
 .img-5{
     grid-area: image-5;
-    border:solid 1px #1ecbe1;
-    opacity: .7;
+   
+    height:240px;
+    border: 1px solid lightgrey;
     border-radius: 3px;
     background: white;
 }
@@ -155,33 +209,39 @@
 }
 
 @media(min-width: 1024px){
-  
+  .main-container{
+      grid-template-rows: 2fr 1fr;
+      padding-left: 15%;
+      padding-right: 15%;
+  }
+  .project-4{
+    padding: 56px;
+  }
+ 
 .about{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2% .5fr .5fr 2%;
-    margin-top: 50px;
-    grid-gap: 5%;
-    margin-bottom: 30px;
-    grid-template-areas: 
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
     
-    "about-header .."
-    "about-text .."
-    "about-text image"
-    ".. about-footer"
-}
-.michael{
-    grid-area: image;
-}
-.about p{
-    grid-area: about-text;
+    
+   
+    grid-template-areas: 
+    "about-header"
+    "about-text" 
+    "michael"
+    "about-footer";
+
 }
 .about-header{
     grid-area: about-header;
-  
+}
+.about-text{
+    grid-area: about-text;
+}
+.michael{
+    grid-area: michael;
 }
 .about-footer{
     grid-area: about-footer;
-    justify-self: end;
 }
 }
