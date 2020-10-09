@@ -34,6 +34,12 @@ strong{
 	color: rgba(0, 120, 218, 0.911);
 	font-size: 24px;
 }
+.notitia{
+	color: rgba(221, 45, 1, 0.8);
+}
+.strongGuess{
+	color:rgb(2, 131, 236);
+}
 
 /* Background  */
 body{
@@ -172,6 +178,17 @@ background-color:  #1ecbe1;
 	margin-top: 100px;
 }
 
+
+
+/* projects section */
+.project-1-text,.project-2-text, .project-3-text, .project-4-text, .project-5-text{
+	padding: 5%;
+}
+.project-1-exText, .project-2-exText,.project-3-exText,
+.project-4-exText,.project-5-exText{
+	text-align: start;
+	padding: 5%;
+}
 /* images */
 .img-1,.img-2, .img-3,.img-4,.img-5{
 	max-width: 392px;
@@ -181,15 +198,6 @@ background-color:  #1ecbe1;
 	
 	
 }
-
-/* projects section */
-
-.project-1-exText, .project-2-exText,.project-3-exText,
-.project-4-exText,.project-5-exText{
-	text-align: start;
-	
-}
-
 
    @media(max-width:500px){
 	
