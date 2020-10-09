@@ -10,9 +10,9 @@
 .projects{
     grid-area: projects;
     display: grid;
-   text-align: left;
+   text-align: center;
    grid-template-columns: 1fr;
-   grid-template-rows: repeat(5, 1.2fr);
+   grid-template-rows: auto;
   
    
 }
@@ -20,6 +20,26 @@
     grid-area: about;
     margin-top: 6rem;
 }
+
+/* projects */
+.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap:1%;
+}
+.project-1,.project-2,.project-3,.project-4,.project-5{
+    border: 2px solid gold;
+    box-shadow: 5px 5px lightgrey;
+    
+}
+
+.img-1,.img-2, .img-3,.img-4,.img-5{
+    align-self: center;
+    border: 2px solid lightgray;
+    margin-top:10px;
+}
+
 @media(min-width: 769px){
 
 .projects{
@@ -27,8 +47,13 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 380px);
     grid-gap:1%;
+    text-align: left;
 }
-  
+.img-1,.img-2, .img-3,.img-4,.img-5{
+    align-self: start;
+    border: 2px solid lightgray;
+    margin-top:10px;
+}
 
     /* card layout */
 
@@ -41,7 +66,7 @@
     grid-template-areas:  
     "image-1 text-1 "
     "image-1 links-1 "
-    "image-1 extext-1 "
+    "image-1  extext-1"
     ;
     overflow-y: scroll;
     border: 2px solid gold;
@@ -76,14 +101,14 @@
 .project-2{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr .5fr 7fr;
+    grid-template-rows: 1fr 1fr 7fr;
     grid-gap: 2%;
     grid-template-areas: 
         "image-2 text-2"
         "image-2 links-2"
         "image-2 extext-2";
         border: 2px solid gold;
-        padding: 56px;
+        padding: 30px;
         border-radius: 5px;
         box-shadow: 5px 5px lightgrey;
         overflow-y: scroll;
