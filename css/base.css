@@ -47,8 +47,9 @@ strong{
 /* Background  */
 body{
 	background-color:white;
-	/* background-image: url("../images/221884-P15UPK-352.JPG"); */
+	background-image: url("../images/white-min.jpg");
 	background-size: cover;
+	
 	background-attachment: fixed;
 	max-width: 1600px;
 	margin:auto;
@@ -58,10 +59,12 @@ body{
 .jumbotron{
 	/* background-color: rgba(160,94,161,1); */
 	/* background: linear-gradient(-90deg, #A05EA1,#B595B5); */
-	background-image: url(../images/white-min.jpg);
-	background-repeat: no-repeat;
+	/* background-image: url(../images/white-min.jpg); */
+	/* background-repeat: no-repeat; */
 	height: 100vh;
 	background-size: 100% 100%;
+	background: transparent;
+	
 	
 
 	
