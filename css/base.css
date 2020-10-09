@@ -5,6 +5,9 @@
 *{
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+  }
 
 /* scrollbars */
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -161,6 +164,12 @@ background-color:  #1ecbe1;
 
 /* main container */
 
+#projects{
+	
+		padding-top: 250px;
+		margin-top: -250px;
+	
+}
 
 
 /* cards */
@@ -183,6 +192,9 @@ background-color:  #1ecbe1;
 /* projects section */
 .project-1-text,.project-2-text, .project-3-text, .project-4-text, .project-5-text{
 	padding: 5%;
+}
+.web-links-1,.web-links-2,.web-links-3,.web-links-4,.web-links-5{
+	padding-left: 5%;
 }
 .project-1-exText, .project-2-exText,.project-3-exText,
 .project-4-exText,.project-5-exText{
