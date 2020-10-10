@@ -82,9 +82,7 @@ body{
 
 
 /* fonts */
-*{
-	font-family: 'Oswald', sans-serif;
-}
+
 
 .nav-link{
 	font-weight: 200;
@@ -205,6 +203,8 @@ background-color:  #1ecbe1;
 /* projects section */
 .project-1-text,.project-2-text, .project-3-text, .project-4-text, .project-5-text{
 	padding: 5%;
+	font-family: 'Quicksand', sans-serif;
+
 }
 .web-links-1,.web-links-2,.web-links-3,.web-links-4,.web-links-5{
 	padding-left: 5%;
@@ -213,16 +213,44 @@ background-color:  #1ecbe1;
 .project-4-exText,.project-5-exText{
 	text-align: start;
 	padding: 5%;
+	font-family: 'Quicksand', sans-serif;
+
 }
 /* images */
 .img-1,.img-2, .img-3,.img-4,.img-5{
 	max-width: 392px;
 	max-height: 312px;
 	border-radius: 5px;
-    
-	
-	
+	position: relative;
+	transition: .2 ease;
 }
+.img-1:hover .img-one,.img-2:hover .img-two,.img-3:hover 
+.img-three,.img-4:hover .img-four,.img-5:hover .img-five{
+opacity: .5;
+cursor: pointer;
+
+}
+.hover-text{
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.3rem;
+
+
+}
+ .img-1:hover .hover-text, .img-2:hover .hover-text,
+ .img-3:hover .hover-text,.img-4:hover .hover-text,
+ .img-5:hover .hover-text{
+	opacity:1;
+	cursor: pointer;
+}
+
+
 
    @media(max-width:500px){
 	
