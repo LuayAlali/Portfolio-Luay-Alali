@@ -282,7 +282,7 @@
     grid-template-rows: auto;
     
     
-   
+   grid-gap:0%;
     grid-template-areas: 
     "about-header"
     "about-text" 
