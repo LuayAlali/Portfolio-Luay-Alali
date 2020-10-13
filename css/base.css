@@ -204,6 +204,7 @@ background-color:  #1fabec;
 #about{
 	font-family: 'Alef', sans-serif;
 	padding-top:150px;
+    margin-top: -60px;
 }
 .about-header{
 	font-family: 'Alef', sans-serif;

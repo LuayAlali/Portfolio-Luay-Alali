@@ -98,7 +98,7 @@ $('.bottom-navbar').on('click',function() {
   $('.card-5-collapse').collapse('hide');
 });
 
-// Vanilla Ice 
+// Ice Vanilla 
 
 // variables
 const mainBtn = document.querySelector('.project-btn');
