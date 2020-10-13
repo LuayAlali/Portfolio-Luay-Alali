@@ -140,3 +140,9 @@ navLinkP.addEventListener('click', () =>{
  projectsH.style.display = 'flex';
  about.style.display = 'grid';
 });
+
+// scroll Reveal
+
+ScrollReveal().reveal('.always', {delay: 500, easing:'cubic-bezier(.17,.67,.92,.34)'});
+ScrollReveal().reveal('.jumbo-sub-1', {delay: 850,  easing:'cubic-bezier(.17,.67,.92,.34)'});
+ScrollReveal().reveal('.project-btn', {delay: 1350, easing:'cubic-bezier(.17,.67,.92,.34)', scale: 2});
