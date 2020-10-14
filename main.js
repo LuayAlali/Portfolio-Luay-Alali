@@ -100,46 +100,6 @@ $('.bottom-navbar').on('click',function() {
 
 // Ice Vanilla 
 
-// variables
-const mainBtn = document.querySelector('.project-btn');
-const projects = document.querySelector('#projects');
-const projectsH = document.querySelector('.projects-header');
-const projectsF = document.querySelector('.projects-footer');
-const about = document.querySelector('#about');
-
-const navLinkP = document.querySelector('.projects-links');
-const navLinkA = document.querySelector('.about-links');
-
-
-
-
-
-// E.Listeners
-
-mainBtn.addEventListener('click', () => {
-
- projects.style.display = 'grid';
- projectsF.style.display = 'flex';
- projectsH.style.display = 'flex';
- about.style.display = 'grid';
-});
-
-// if projects link is clicked
-navLinkA.addEventListener('click', () =>{
-  projects.style.display = 'grid';
- projectsF.style.display = 'flex';
- projectsH.style.display = 'flex';
- about.style.display = 'grid';
-});
-
-
-// if about links is clicked
-navLinkP.addEventListener('click', () =>{
-  projects.style.display = 'grid';
- projectsF.style.display = 'flex';
- projectsH.style.display = 'flex';
- about.style.display = 'grid';
-});
 
 // scroll Reveal
 
